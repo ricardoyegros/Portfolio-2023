@@ -11,11 +11,11 @@ import {
 import {motion} from "framer-motion";
 export default function NavBar() {
   return (
-    <header className="w-full px-32 py-8 font-montserrat font-medium flex items-center justify-between">
+    <header className="w-full px-20 py-8 font-montserrat font-medium flex items-center justify-between">
       <nav>
         <CustomLink to={routes.ABOUT_ME} title={"Sobre Mí"} className="mr-4" />
         <CustomLink to={routes.CERTIFICATIONS} title={"Certificaciones"} className="mx-4" />
-        <CustomLink to={routes.CONTACT} title={"Contacto"} className="mx-4"/>
+        <CustomLink to={routes.SKILLS} title={"Habilidades"} className="mx-4"/>
         <CustomLink to={routes.PROJECTS} title={"Proyectos"} className="mx-4" />
         <CustomLink to={routes.TESTIMONIES} title={"Testimonios"} className="ml-4"/>
       </nav>

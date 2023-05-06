@@ -3,5 +3,5 @@ export const routes = {
     PROJECTS: "/proyects",
     CERTIFICATIONS:"/certifications",
     TESTIMONIES:"/testimonies",
-    CONTACT:"/contact"
+    SKILLS:"/skills"
 }
