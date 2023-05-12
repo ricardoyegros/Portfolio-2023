@@ -5,7 +5,6 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import CertificationPage from "./pages/CertificationPage/CertificationPage";
 import SkillsPage from "./pages/SkillsPage/SkillsPage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
-import TestimoniesPage from "./pages/TestimoniesPage/TestimoniesPage";
 import { routes } from "./routes/routes";
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path={routes.CERTIFICATIONS} element={<CertificationPage />} />
           <Route path={routes.SKILLS} element={<SkillsPage />} />
           <Route path={routes.PROJECTS} element={<ProjectsPage />} />
-          <Route path={routes.TESTIMONIES} element={<TestimoniesPage />} />
         </Routes>
     </BrowserRouter>
   );

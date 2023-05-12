@@ -13,11 +13,11 @@ export default function NavBar() {
   return (
     <header className="w-full px-20 py-8 font-montserrat font-medium flex items-center justify-between">
       <nav>
-        <CustomLink to={routes.ABOUT_ME} title={"Sobre Mí"} className="mr-4" />
-        <CustomLink to={routes.CERTIFICATIONS} title={"Certificaciones"} className="mx-4" />
+        <CustomLink to={routes.HOME} title={"¡Bienvenido!"} className="mr-4" />
+        <CustomLink to={routes.ABOUT_ME} title={"Sobre Mí"} className="mx-4" />
         <CustomLink to={routes.SKILLS} title={"Habilidades"} className="mx-4"/>
-        <CustomLink to={routes.PROJECTS} title={"Proyectos"} className="mx-4" />
-        <CustomLink to={routes.TESTIMONIES} title={"Testimonios"} className="ml-4"/>
+        <CustomLink to={routes.CERTIFICATIONS} title={"Certificaciones"} className="mx-4" />
+        <CustomLink to={routes.PROJECTS} title={"Proyectos"} className="ml-4" />
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mr-3" href="https://twitter.com/rickyegros" target="_blank" rel="noreferrer">
