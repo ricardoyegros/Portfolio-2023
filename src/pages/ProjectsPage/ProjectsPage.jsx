@@ -18,7 +18,7 @@ export default function ProjectsPage() {
           title="AlkyBank (2022)"
           img={AlkyBank}
           github="https://github.com/NazarenoRios/alkybank"
-          summary="Este proyecto duró dos semanas y entre las principales features que contiene la wallet está la posibilidad de realizar un registro o inicio de sesión tanto con email como con google, una vez dentro muestra balance de la cuenta, se pueden realizar transferencias a otra cuenta, realizar depósitos, pagos, ver los últimos movimientos, también ver la totalidad de los mismos y realizarles distintos filtros por tipo, concepto, etc."
+          summary="Este proyecto duró dos semanas y entre las principales features que contiene la wallet está la posibilidad de realizar un registro o inicio de sesión tanto con email como con google, una vez dentro muestra balance de la cuenta, se pueden realizar transferencias a otra cuenta, realizar depósitos, pagos, ver los últimos movimientos, también ver la totalidad de los mismos y realizarles distintos filtros por tipo, concepto, etc. Las principales tecnologías usadas para dicha tienda virtual fueron: HTML, JavaScript, React, Redux, TailwindCSS y Git."
         />
         <Projects
           type="Tienda Virtual"
@@ -59,7 +59,7 @@ Los requisitos que tiene dicha App son los siguientes:
           title="Portafolio Ricardo Yegros (2022)"
           img={Portfolio2022}
           github="https://github.com/ricardoyegros/Portfolio2022"
-          summary="Portafolio Personal del año 2022"
+          summary="Portafolio Personal del año 2022 hecho con HTML y Bootstrap"
         />
         <Projects
           type="Web de Recetas"

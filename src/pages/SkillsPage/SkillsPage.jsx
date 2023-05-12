@@ -8,9 +8,9 @@ export default function SkillsPage() {
   return (
     <Layout className="pt-12">
       <AnimatedText text="Mis Habilidades" className="!text-7xl" />
-      <div className={`w-full h-screen relative flex items-center justify-center rounded-full ${darkMode ? "bg-circularLight" : "bg-circularDark"}`}>
+      <div className={`w-full h-screen relative flex items-center justify-center rounded-full ${!darkMode ? "bg-circularLight" : "bg-circularDark"}`}>
         <motion.div
-          className={`flex items-center justify-center rounded-full font-semibold font-montserrat bg-dark text-light ${darkMode ? "border-dark" : "border-light"} border-2 border-solid shadow-dark p-8 cursor-pointer`}
+          className={`flex items-center justify-center rounded-full font-semibold font-montserrat bg-dark text-light ${!darkMode ? "border-dark" : "border-light"} border-2 border-solid shadow-dark p-8 cursor-pointer`}
           whileHover={{
             backgroundColor: [
               "#121212",
