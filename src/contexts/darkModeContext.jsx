@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { createContext, useState, useEffect } from "react"
 
 const DarkModeContext = createContext({
-  darkMode: true,
+  darkMode: false,
   setDarkMode: () => {}
 })
 
@@ -12,7 +12,7 @@ const DarkModeProvider = ({ children }) => {
   
   localStorage.setItem("darkMode",darkMode)
   useEffect(() => {
-    if (localStorage.getItem("darkMode") === "true") {
+    if (localStorage.getItem("darkMode") === "false") {
       setDarkMode(true)
     } else {
       setDarkMode(false)
