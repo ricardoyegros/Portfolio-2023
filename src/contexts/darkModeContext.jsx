@@ -12,10 +12,10 @@ const DarkModeProvider = ({ children }) => {
   
   localStorage.setItem("darkMode",darkMode)
   useEffect(() => {
-    if (localStorage.getItem("darkMode") === "false") {
-      setDarkMode(true)
-    } else {
+    if (localStorage.getItem("darkMode") === "true") {
       setDarkMode(false)
+    } else {
+      setDarkMode(true)
     } 
   }, [])
 
