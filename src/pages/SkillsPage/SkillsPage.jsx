@@ -2,13 +2,15 @@ import Layout from "../../components/Layout";
 import Skill from "../../components/Skill";
 import AnimatedText from "../../components/AnimatedText";
 import { motion } from "framer-motion";
+import {useDarkModeContext} from "../../contexts/darkModeContext";
 export default function SkillsPage() {
+  const {darkMode} = useDarkModeContext();
   return (
     <Layout className="pt-12">
       <AnimatedText text="Mis Habilidades" className="!text-7xl" />
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
+      <div className={`w-full h-screen relative flex items-center justify-center rounded-full ${darkMode ? "bg-circularLight" : "bg-circularDark"}`}>
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold font-montserrat bg-dark text-light p-8 shadow-dark cursor-pointer"
+          className={`flex items-center justify-center rounded-full font-semibold font-montserrat bg-dark text-light ${darkMode ? "border-dark" : "border-light"} border-2 border-solid shadow-dark p-8 cursor-pointer`}
           whileHover={{
             backgroundColor: [
               "#121212",

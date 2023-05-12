@@ -15,14 +15,14 @@ export default function CertificationPage() {
     <Layout className="pt-12">
       <AnimatedText text="Mis Certificados" className="!text-7xl" />
       <div className="grid grid-cols-12 gap-24 mt-16">
-      <Certifications type="Henry" link="https://certificates.soyhenry.com/cert?id=bf9a33a6-add0-4840-af08-71456382ea59" title="<Full Stack Developer/>" img={HenryImg} academyLink="https://www.soyhenry.com"/>
+      <Certifications type="Henry" link="https://certificates.soyhenry.com/cert?id=bf9a33a6-add0-4840-af08-71456382ea59" title="<Full Stack Developer />" img={HenryImg} academyLink="https://www.soyhenry.com"/>
       <Certifications type="Alkemy" link="https://1drv.ms/b/s!Ar03SPROiZU8ngs_zvY6hhr4DINw?e=zPCm7l" title="<Skill Up React/>" img={Alkemy} academyLink="https://www.alkemy.org"/>
-      <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/7eadcc58-88db-4ced-a453-8c0b0563e526" title="<React Avanzado/>" img={ReactAvanzadoImg} academyLink="https://open-bootcamp.com"/>
-      <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/3396e858-2983-41a2-828a-0de74a9b4a4a" title="<React Intermedio/>" img={ReactIntermedioImg} academyLink="https://open-bootcamp.com"/>
-      <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/ef300dd6-7cb7-4eb8-b5e6-066ad243f160" title="<React Básico/>" img={ReactBasicoImg} academyLink="https://open-bootcamp.com"/>
-      <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/cf6e2b29-704f-43df-87ac-2d01e1f15e00" title="<JavaScript/>" img={JavaScriptImg} academyLink="https://open-bootcamp.com"/>
-      <Certifications type="Google Activate (ID = MDX CQE B4Z)" link="https://learndigital.withgoogle.com/activate/validate-certificate-code" title="<Comercio Electrónico/>" img={InglesImg} academyLink="https://formacionactivate.withgoogle.com/ia"/>
-      <Certifications type="EFFSET" link="https://www.efset.org/cert/MKj4Aa" title="<Inglés Nivel B2/>" img={GoogleActivateImg} academyLink="https://www.efset.org/es"/>
+      <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/7eadcc58-88db-4ced-a453-8c0b0563e526" title="<React Avanzado />" img={ReactAvanzadoImg} academyLink="https://open-bootcamp.com"/>
+      <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/3396e858-2983-41a2-828a-0de74a9b4a4a" title="<React Intermedio />" img={ReactIntermedioImg} academyLink="https://open-bootcamp.com"/>
+      <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/ef300dd6-7cb7-4eb8-b5e6-066ad243f160" title="<React Básico />" img={ReactBasicoImg} academyLink="https://open-bootcamp.com"/>
+      <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/cf6e2b29-704f-43df-87ac-2d01e1f15e00" title="<JavaScript />" img={JavaScriptImg} academyLink="https://open-bootcamp.com"/>
+      <Certifications type="Google Activate (ID = MDX CQE B4Z)" link="https://learndigital.withgoogle.com/activate/validate-certificate-code" title="<Comercio Electrónico />" img={InglesImg} academyLink="https://formacionactivate.withgoogle.com/ia"/>
+      <Certifications type="EFFSET" link="https://www.efset.org/cert/MKj4Aa" title="<Inglés Nivel B2 />" img={GoogleActivateImg} academyLink="https://www.efset.org/es"/>
       </div>
     </Layout>
   );

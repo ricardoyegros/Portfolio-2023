@@ -6,9 +6,11 @@ import CertificationPage from "./pages/CertificationPage/CertificationPage";
 import SkillsPage from "./pages/SkillsPage/SkillsPage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 import { routes } from "./routes/routes";
+import { DarkModeProvider } from "./contexts/darkModeContext";
 function App() {
   return (
     <BrowserRouter>
+      <DarkModeProvider>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path={routes.ABOUT_ME} element={<AboutPage />} />
@@ -16,6 +18,7 @@ function App() {
           <Route path={routes.SKILLS} element={<SkillsPage />} />
           <Route path={routes.PROJECTS} element={<ProjectsPage />} />
         </Routes>
+      </DarkModeProvider>
     </BrowserRouter>
   );
 }
