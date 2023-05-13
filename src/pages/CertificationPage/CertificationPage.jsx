@@ -14,7 +14,7 @@ export default function CertificationPage() {
   return (
     <Layout className="pt-12">
       <AnimatedText text="Mis Certificados" className="!text-7xl md:!text-6xl sm:!text-5xl xs:!text-4xl" />
-      <div className="grid grid-cols-12 gap-24 mt-16">
+      <div className="grid grid-cols-12 gap-24 mt-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
       <Certifications type="Henry" link="https://certificates.soyhenry.com/cert?id=bf9a33a6-add0-4840-af08-71456382ea59" title="<Full Stack Developer />" img={HenryImg} academyLink="https://www.soyhenry.com"/>
       <Certifications type="Alkemy" link="https://1drv.ms/b/s!Ar03SPROiZU8ngs_zvY6hhr4DINw?e=zPCm7l" title="<Skill Up React/>" img={Alkemy} academyLink="https://www.alkemy.org"/>
       <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/7eadcc58-88db-4ced-a453-8c0b0563e526" title="<React Avanzado />" img={ReactAvanzadoImg} academyLink="https://open-bootcamp.com"/>
