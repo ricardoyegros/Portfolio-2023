@@ -21,14 +21,14 @@ export default function NavBar() {
   return (
     <header className="w-full px-32 py-8 font-montserrat font-medium flex items-center justify-between relative z-10 lg:px-16 md:px-12 sm:px-8">
       {/* Hamburguer menu */}
-      <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
+      <button className="flex-col justify-center items-center hidden xl:flex" onClick={handleClick}>
         <span className={` ${!darkMode ? "bg-dark" : "bg-light"} block h-0.5 w-6 rounded-sm transition-all ease-in duration-300 ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}></span>
         <span className={` ${!darkMode ? "bg-dark" : "bg-light"} block h-0.5 w-6 rounded-sm my-0.5 transition-all ease-in duration-300 ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
         <span className={` ${!darkMode ? "bg-dark" : "bg-light"} block h-0.5 w-6 rounded-sm transition-all ease-in duration-300 ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}></span>
       </button>
       {/* Hamburguer menu */}
       {/* Desktop menu */}
-      <div className="w-full flex justify-between items-center lg:hidden">
+      <div className="w-full flex justify-between items-center xl:hidden">
       <nav>
         <CustomLink to={routes.ABOUT_ME} title={"Sobre Mí"} className="mr-4" />
         <CustomLink to={routes.SKILLS} title={"Habilidades"} className="mx-4"/>
