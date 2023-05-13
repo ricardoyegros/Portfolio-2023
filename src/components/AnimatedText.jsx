@@ -28,7 +28,7 @@ const singleWord = {
 export default function AnimatedText({ text, className = "" }) {
   const {darkMode} = useDarkModeContext();
   return (
-    <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden"
+    <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0"
     >
       <motion.h1 variants={quote} initial="initial" animate="animate" className={`inline-block w-full ${!darkMode ? "text-dark" : "text-light"} font-bold font-montserrat capitalize text-8xl ${className}`}
 >

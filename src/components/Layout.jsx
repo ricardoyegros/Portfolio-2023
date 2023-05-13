@@ -6,7 +6,7 @@ export default function Layout({children, className=""}){
     return(
         <main className={`${!darkMode ? "bg-light" : "bg-dark"} w-full min-h-screen`}>
         <NavBar/>
-        <div className={`w-full h-full inline-block z-0 ${!darkMode ? "bg-light" : "bg-dark"} p-32 ${className}`}>
+        <div className={`w-full h-full inline-block z-0 ${!darkMode ? "bg-light" : "bg-dark"} p-32 ${className} xl:p-24 lg:p-16 md:-12 sm:p-8`}>
             {children}
         </div>
         <Footer />
