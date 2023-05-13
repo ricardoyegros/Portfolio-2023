@@ -10,8 +10,8 @@ import TechStore from "../../assets/images/projects/TechStore.png";
 export default function ProjectsPage() {
   return (
     <Layout className="pt-12">
-      <AnimatedText text="Mis Proyectos" className="!text-7xl" />
-      <div className="grid grid-cols-12 gap-24 mt-16">
+      <AnimatedText text="Mis Proyectos" className="!text-7xl md:!text-6xl sm:!text-5xl xs:!text-4xl" />
+      <div className="grid grid-cols-12 gap-24 mt-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
         <Projects
           type="Billetera Virtual"
           link="https://drive.google.com/file/d/1M9X-P1DfWjz-6-0W47oLqiNqxZpPjb4r/view"

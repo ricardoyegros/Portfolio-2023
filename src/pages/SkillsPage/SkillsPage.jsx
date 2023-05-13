@@ -7,7 +7,7 @@ export default function SkillsPage() {
   const {darkMode} = useDarkModeContext();
   return (
     <Layout className="pt-12">
-      <AnimatedText text="Mis Habilidades" className="!text-7xl md:!text-6xl sm:!text-4xl" />
+      <AnimatedText text="Mis Habilidades" className="!text-7xl md:!text-6xl sm:!text-5xl xs:!text-4xl" />
       <div className={`w-full h-screen xs:max-h-96 relative flex items-center justify-center rounded-full ${!darkMode ? "bg-circularLight lg:bg-circularLightLg md:bg-circularLightMd sm:bg-circularLightSm" : "bg-circularDark lg:bg-circularDarkLg md:bg-circularDarkMd sm:bg-circularDarkSm"}`}>
         <motion.div
           className={`flex items-center justify-center rounded-full font-semibold font-montserrat bg-dark text-light ${!darkMode ? "border-dark xs:text-dark" : "border-light "} border-2 border-solid shadow-dark p-8 cursor-pointer xs:border-none lg:p-6 md:p-4 xs:text-xs xs:p-2 xs:bg-transparent`}
