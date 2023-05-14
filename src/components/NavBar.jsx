@@ -2,6 +2,7 @@ import { routes } from "../routes/routes.js";
 import Logo from "./Logo.jsx";
 import CustomLink from "./CustomLink.jsx";
 import CustomMobileLink from "./CustomMobileLink.jsx";
+import WhatsappIcon from "../assets/images/svgs/whatsapp-svgrepo-com.svg";
 import {
   TwitterIcon,
   GithubIcon,
@@ -112,7 +113,7 @@ export default function NavBar() {
             rel="noreferrer"
           >
             <img
-              src="/src/assets/images/svgs/whatsapp-svgrepo-com.svg"
+              src={WhatsappIcon}
               alt="whatsapp icon"
             />
           </motion.a>
@@ -203,7 +204,7 @@ export default function NavBar() {
               rel="noreferrer"
             >
               <img
-                src="/src/assets/images/svgs/whatsapp-svgrepo-com.svg"
+                src={WhatsappIcon}
                 alt="whatsapp icon"
               />
             </motion.a>
