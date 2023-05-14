@@ -1,8 +1,8 @@
 import Layout from "../../components/Layout";
-import Skill from "../../components/Skill";
 import AnimatedText from "../../components/AnimatedText";
 import { motion } from "framer-motion";
 import {useDarkModeContext} from "../../contexts/darkModeContext";
+import Skill from "./components/Skill";
 export default function SkillsPage() {
   const {darkMode} = useDarkModeContext();
   return (

@@ -1,5 +1,4 @@
 import Layout from "../../components/Layout";
-import Certifications from "../../components/Certifications";
 import HenryImg from "../../assets/images/certifications/henry full stack.jpeg";
 import Alkemy from "../../assets/images/certifications/alkemy.jpg";
 import ReactAvanzadoImg from "../../assets/images/certifications/react avanzado.jpg";
@@ -9,6 +8,7 @@ import JavaScriptImg from "../../assets/images/certifications/javascript.jpg";
 import InglesImg from "../../assets/images/certifications/efset.jpg";
 import GoogleActivateImg from "../../assets/images/certifications/google activate.jpg";
 import AnimatedText from "../../components/AnimatedText";
+import Certifications from "./components/Certifications";
 
 export default function CertificationPage() {
   return (

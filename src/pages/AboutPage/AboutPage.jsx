@@ -1,8 +1,8 @@
 import Layout from "../../components/Layout";
 import AnimatedText from "../../components/AnimatedText";
-import AnimatedNumbers from "../../components/AnimatedNumbers";
 import RicardoYegrosPic from "../../assets/images/profile/me.jpg";
 import {useDarkModeContext} from "../../contexts/darkModeContext";
+import AnimatedNumbers from "./components/AnimatedNumbers";
 export default function AboutPage() {
   const {darkMode} = useDarkModeContext();
   return (

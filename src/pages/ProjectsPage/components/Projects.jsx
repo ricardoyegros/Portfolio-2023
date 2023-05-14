@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { GithubIcon } from "./Icons";
-import {useDarkModeContext} from "../contexts/darkModeContext";
+import { GithubIcon } from "../../../components/Icons";
+import {useDarkModeContext} from "../../../contexts/darkModeContext";
 export default function Projects({ title, type, img, link, github,summary }) {
   const {darkMode} = useDarkModeContext();
   return (

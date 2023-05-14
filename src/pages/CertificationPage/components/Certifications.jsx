@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import {useDarkModeContext} from "../contexts/darkModeContext";
+import {useDarkModeContext} from "../../../contexts/darkModeContext";
 export default function Certifications({
   type,
   link,

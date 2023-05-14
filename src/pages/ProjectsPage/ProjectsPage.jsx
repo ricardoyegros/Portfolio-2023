@@ -1,12 +1,12 @@
 import Layout from "../../components/Layout";
 import AnimatedText from "../../components/AnimatedText";
-import Projects from "../../components/Projects";
 import AlkyBank from "../../assets/images/projects/alkemy-wallet.jpg";
 import BuscadorPeliculas from "../../assets/images/projects/Buscador-de-peliculas (2).jpg";
 import NetClone from "../../assets/images/projects/netflixclone.png";
 import PiFood from "../../assets/images/projects/Pi food.png";
 import Portfolio2022 from "../../assets/images/projects/portfolio.png";
 import TechStore from "../../assets/images/projects/TechStore.png";
+import Projects from "./components/Projects";
 export default function ProjectsPage() {
   return (
     <Layout className="pt-12">

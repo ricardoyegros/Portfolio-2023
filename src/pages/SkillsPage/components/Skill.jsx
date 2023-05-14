@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {useDarkModeContext} from "../contexts/darkModeContext";
+import {useDarkModeContext} from "../../../contexts/darkModeContext";
 export default function Skill({name, x, y}){
     const {darkMode} = useDarkModeContext();
     return(
