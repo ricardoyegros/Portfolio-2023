@@ -6,7 +6,7 @@ export default function Projects({ title, type, img, link, github,summary }) {
   return (
     <div className="col-span-12">
       <article className={`w-full flex items-center justify-between rounded-3xl border border-solid ${!darkMode ? "border-primary bg-light" : "border-primaryDark bg-dark" } shadow-black shadow-2xl p-12 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4`}>
-        <img src={img} alt="Imagen de Proyecto" className="w-1/2  " />
+        <img src={img} alt="Imagen de Proyecto" className="w-1/2 md:w-full md:rounded-lg" />
         <div className="w-1/2 flex flex-col items-start lg:items-center justify-between pl-6 lg:p-0 gap-6 lg:w-full">
           <span className={`${!darkMode ? "text-primary" : "text-primaryDark" } lg:pt-4 font-medium xs:text-sm font-montserrat text-xl`}>
             {type}
