@@ -22,7 +22,7 @@ export default function HomePage(){
                     {englishMode ? english.paragraph : spanish.paragraph}
                     </p>
                     <div className="flex items-center self-start mt-2 lg:self-center">
-                        <Link to="/CVFinalRicardoYegros (1).pdf" target={"_blank"} download={true} className={`flex items-center p-2.5 px-6 rounded-lg text-lg font-montserrat font-semibold ${!darkMode ? "bg-dark text-light hover:bg-light hover:text-dark hover:border-dark" : "bg-light text-dark hover:bg-dark hover:text-light hover:border-light"} border-2 border-solid border-transparent transition-all ease-in duration-300 md:p-2 md:px-4 md:text-base`}>{englishMode ? english.buttonCv : spanish.buttonCv}</Link>
+                        <Link to="/CVRicardoYegros2023.pdf" target={"_blank"} download={true} className={`flex items-center p-2.5 px-6 rounded-lg text-lg font-montserrat font-semibold ${!darkMode ? "bg-dark text-light hover:bg-light hover:text-dark hover:border-dark" : "bg-light text-dark hover:bg-dark hover:text-light hover:border-light"} border-2 border-solid border-transparent transition-all ease-in duration-300 md:p-2 md:px-4 md:text-base`}>{englishMode ? english.buttonCv : spanish.buttonCv}</Link>
                         <Link to="mailto:ricardo_yegros@hotmail.com" className={`ml-4 text-lg font-montserrat font-medium capitalize ${!darkMode ? "text-dark" : "text-light" } hover:underline md:text-base`}>{englishMode ? english.buttonToTalk : spanish.buttonToTalk}</Link>
                     </div>
                 </div>
