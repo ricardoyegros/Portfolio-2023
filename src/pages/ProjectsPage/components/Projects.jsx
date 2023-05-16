@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { GithubIcon } from "../../../components/Icons";
 import {useDarkModeContext} from "../../../contexts/darkModeContext";
-export default function Projects({ title, type, img, link, github,summary }) {
+import {english, spanish} from "../data/projects.data";
+export default function Projects({ title, type, img, link, github,summary, englishMode }) {
   const {darkMode} = useDarkModeContext();
   return (
     <div className="col-span-12">
@@ -28,7 +29,7 @@ export default function Projects({ title, type, img, link, github,summary }) {
               target="_blank"
               className={` ${!darkMode ? "bg-dark text-light hover:bg-light hover:text-dark hover:border-dark" : "bg-light text-dark hover:bg-dark hover:text-light hover:border-light"} rounded-lg p-2 px-6 md:px-4 md:p-1 font-semibold font-montserrat hover:cursor-pointer  transition-all ease-in duration-300 border-2 border-solid lg:order-1`}
             >
-              Ver Proyecto
+              {englishMode ? english.buttonToProject : spanish.buttonToProject}
             </Link>
           </div>
         </div>

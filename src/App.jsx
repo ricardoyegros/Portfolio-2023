@@ -7,10 +7,12 @@ import SkillsPage from "./pages/SkillsPage/SkillsPage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 import { routes } from "./routes/routes";
 import { DarkModeProvider } from "./contexts/darkModeContext";
+import { EnglishModeProvider } from "./contexts/englishModeContext";
 function App() {
   return (
     <BrowserRouter>
       <DarkModeProvider>
+      <EnglishModeProvider>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path={routes.ABOUT_ME} element={<AboutPage />} />
@@ -18,6 +20,7 @@ function App() {
           <Route path={routes.SKILLS} element={<SkillsPage />} />
           <Route path={routes.PROJECTS} element={<ProjectsPage />} />
         </Routes>
+      </EnglishModeProvider>
       </DarkModeProvider>
     </BrowserRouter>
   );

@@ -3,7 +3,10 @@ import CustomMobileLink from "./CustomMobileLink";
 import { routes } from "../routes/routes";
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from "./Icons";
 import WhatsappIcon from "../assets/images/svgs/whatsapp-svgrepo-com.svg";
-export default function MobileMenu({isOpen,setIsOpen,darkMode,setDarkMode,handleClick}){
+import SpainIcon from "../assets/images/svgs/icons8-spain-96.png";
+import EnglishIcon from "../assets/images/svgs/icons8-english-96 (1).png";
+import {spanish, english} from "../data/navBarData/navBar.data";
+export default function MobileMenu({isOpen,setIsOpen,darkMode,setDarkMode,englishMode, setEnglishMode, handleClick}){
     return(<>
         {isOpen ? (
             <motion.div
@@ -16,22 +19,22 @@ export default function MobileMenu({isOpen,setIsOpen,darkMode,setDarkMode,handle
               <nav className="flex items-center flex-col gap-2 justify-center">
                 <CustomMobileLink
                   to={routes.ABOUT_ME}
-                  title={"Sobre Mí"}
+                  title={englishMode ? english.About : spanish.About }
                   toggle={handleClick}
                 />
                 <CustomMobileLink
                   to={routes.SKILLS}
-                  title={"Habilidades"}
+                  title={englishMode ? english.Skills : spanish.Skills }
                   toggle={handleClick}
                 />
                 <CustomMobileLink
                   to={routes.CERTIFICATIONS}
-                  title={"Certificaciones"}
+                  title={englishMode ? english.Certifications : spanish.Certifications }
                   toggle={handleClick}
                 />
                 <CustomMobileLink
                   to={routes.PROJECTS}
-                  title={"Proyectos"}
+                  title={englishMode ? english.Projects : spanish.Projects }
                   toggle={handleClick}
                 />
               </nav>
@@ -72,7 +75,7 @@ export default function MobileMenu({isOpen,setIsOpen,darkMode,setDarkMode,handle
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
                   className="w-6 mx-3 sm:mx-1"
-                  href="https://api.whatsapp.com/send?phone=543718530530&text=¡Hola!%20he%20llegado%20aquí%20desde%20tu%20portafolio"
+                  href={englishMode ? english.WhatsappFromNavBar : spanish.WhatsappFromNavBar}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -81,6 +84,14 @@ export default function MobileMenu({isOpen,setIsOpen,darkMode,setDarkMode,handle
                     alt="whatsapp icon"
                   />
                 </motion.a>
+                <motion.button
+            onClick={() => {setEnglishMode(!englishMode), setIsOpen(!isOpen)}}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className={`w-6 mx-3 sm:mx-1`}
+          >
+            {englishMode ? <img src={SpainIcon} alt="Spain flag" /> : <img src={EnglishIcon} alt="England flag"/>}
+          </motion.button>
                 <motion.button
                   onClick={() => {
                     setDarkMode(!darkMode), setIsOpen(!isOpen);

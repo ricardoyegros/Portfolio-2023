@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import {useDarkModeContext} from "../../../contexts/darkModeContext";
+import {english, spanish} from "../data/certifications.data";
 export default function Certifications({
   type,
   link,
   title,
   img,
   academyLink,
+  englishMode
 }) {
   const {darkMode} = useDarkModeContext();
   return (
@@ -31,7 +33,7 @@ export default function Certifications({
               target="_blank"
               className={` ${!darkMode ? "bg-dark text-light hover:bg-light hover:text-dark hover:border-dark" : "bg-light text-dark hover:bg-dark hover:text-light hover:border-light" } rounded-lg  p-2 px-6 font-semibold font-montserrat hover:cursor-pointer transition-all ease-in duration-300 border-2 border-solid`}
             >
-              Ver Certificado
+              {englishMode ? english.buttonToCertificate : spanish.buttonToCertificate}
             </Link>
           </div>
         </div>

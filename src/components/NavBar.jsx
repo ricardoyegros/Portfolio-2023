@@ -1,11 +1,13 @@
 import Logo from "./Logo.jsx";
 import { useDarkModeContext } from "../contexts/darkModeContext.jsx";
+import { useEnglishModeContext } from "../contexts/englishModeContext.jsx";
 import { useState } from "react";
 import DesktopMenu from "./DesktopMenu.jsx";
 import MobileMenu from "./MobileMenu.jsx";
 import HamburguerMenu from "./HamburguerMenu.jsx";
 export default function NavBar() {
   const { darkMode, setDarkMode } = useDarkModeContext();
+  const { englishMode, setEnglishMode } = useEnglishModeContext();
   const [isOpen, setIsOpen] = useState(false);
   function handleClick() {
     setIsOpen(!isOpen);
@@ -15,9 +17,9 @@ export default function NavBar() {
       {/* Hamburguer menu */}
       <HamburguerMenu isOpen={isOpen} darkMode={darkMode} handleClick={handleClick} />
       {/* Desktop menu */}
-      <DesktopMenu darkMode={darkMode} setDarkMode={setDarkMode} />
+      <DesktopMenu darkMode={darkMode} setDarkMode={setDarkMode} englishMode={englishMode} setEnglishMode={setEnglishMode}/>
       {/* Mobile Links */}
-      <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} darkMode={darkMode} setDarkMode={setDarkMode} handleClick={handleClick}/>
+      <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} darkMode={darkMode} setDarkMode={setDarkMode} englishMode={englishMode} setEnglishMode={setEnglishMode} handleClick={handleClick}/>
       {/* Logo Universal in both modes */}
       <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
         <Logo />
