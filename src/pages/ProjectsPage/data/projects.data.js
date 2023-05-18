@@ -19,6 +19,8 @@ export const spanish = {
   recipesTitle: "Web De Recetas",
   recipesDescription:
     "Se trata de una Single Page Application (SPA) que consume datos de una API externa (spoonacular) el cual fué mi proyecto individual en el cual pude volcar todos los conocimientos adquiridos durante el cursado del bootcamp de Full Stack Developer. El mismo poseé filtros de búsqueda, categorías y ordenamientos, a su vez puede crear nuevas recetas a partir de un formulario de creación y al terminar la puede visualizar en la Home Page y también acceder al detalle de la misma, fué construido con las siguientes tecnologías: JavaScript, React, Redux, CSS, NodeJS, Express, Sequelize y Git. Como sistema de gestión de bases de datos utilicé PostgreSQL.",
+  portfolio2023Title: "Portafolio Personal",
+  portfolio2023Description: "Portafolio personal del año 2023 hecho con React, TailwindCSS y FramerMotion. El mismo es totalmente responsive, posee modo oscuro y aporte la funcionalidad de cambiar de idioma."
 };
 
 export const english = {
@@ -41,4 +43,6 @@ export const english = {
   recipesTitle: "Recipes Web",
   recipesDescription:
     "This is a Single Page Application (SPA) that consumes data from an external API (spoonacular) which was my individual project in which I could dump all the knowledge acquired during the Full Stack Developer bootcamp. It has search filters, categories and sorting, in turn you can create new recipes from a creation form and when finished you can view it on the Home Page and also access the details of it, it was built with the following technologies: JavaScript, React, Redux, CSS, NodeJS, Express, Sequelize and Git. As database management system I used PostgreSQL.",
-};
+  portfolio2023Title: "Personal Portfolio",
+  portfolio2023Description:"Personal portfolio of the year 2023 made with React, TailwindCSS and FramerMotion. It is fully responsive, has dark mode and provides the ability to switch languages."
+  };

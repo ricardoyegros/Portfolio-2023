@@ -6,6 +6,7 @@ import NetClone from "../../assets/images/projects/netflixclone.png";
 import PiFood from "../../assets/images/projects/Pi food.png";
 import Portfolio2022 from "../../assets/images/projects/portfolio.png";
 import TechStore from "../../assets/images/projects/TechStore.png";
+import Portfolio2023 from "../../assets/images/projects/Portafolio2023.jpg";
 import Projects from "./components/Projects";
 import {useEnglishModeContext} from "../../contexts/englishModeContext";
 import {spanish, english} from "./data/projects.data";
@@ -31,6 +32,15 @@ export default function ProjectsPage() {
           img={TechStore}
           github="https://github.com/ricardoyegros/PF-Frontend"
           summary={englishMode ? english.techDescription : spanish.techDescription}
+          englishMode={englishMode}
+        />
+        <Projects
+          type={englishMode ? english.portfolio2023Title: spanish.portfolio2023Title}
+          link="https://www.ricardoyegros.com.ar"
+          title="Portafolio Ricardo Yegros (2023)"
+          img={Portfolio2023}
+          github="https://github.com/ricardoyegros/Portfolio-2023"
+          summary={englishMode ? english.portfolio2023Description : spanish.portfolio2023Description}
           englishMode={englishMode}
         />
         <Projects
