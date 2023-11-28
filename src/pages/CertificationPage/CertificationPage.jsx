@@ -7,6 +7,7 @@ import ReactBasicoImg from "../../assets/images/certifications/react basico.jpg"
 import JavaScriptImg from "../../assets/images/certifications/javascript.jpg";
 import InglesImg from "../../assets/images/certifications/efset.jpg";
 import GoogleActivateImg from "../../assets/images/certifications/google activate.jpg";
+import DesafioImg from "../../assets/images/certifications/desafio.png";
 import AnimatedText from "../../components/AnimatedText";
 import Certifications from "./components/Certifications";
 import {useEnglishModeContext} from "../../contexts/englishModeContext";
@@ -17,6 +18,7 @@ export default function CertificationPage() {
     <Layout className="pt-12">
       <AnimatedText text={englishMode ? english.title : spanish.title} className="!text-7xl md:!text-6xl sm:!text-5xl xs:!text-4xl" />
       <div className="grid grid-cols-12 gap-24 mt-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
+      <Certifications type="Desafio Latam" link="https://1drv.ms/b/s!Ar03SPROiZU8n0KNsuhajKbC5LPi" title="<Facilitador de bootcamp tecnológico e-learning/>" img={DesafioImg} academyLink="https://desafiolatam.com/" englishMode={englishMode}/>
       <Certifications type="Henry" link="https://certificates.soyhenry.com/cert?id=bf9a33a6-add0-4840-af08-71456382ea59" title="<Full Stack Developer />" img={HenryImg} academyLink="https://www.soyhenry.com" englishMode={englishMode}/>
       <Certifications type="Alkemy" link="https://1drv.ms/b/s!Ar03SPROiZU8ngs_zvY6hhr4DINw?e=zPCm7l" title="<Skill Up React/>" img={Alkemy} academyLink="https://www.alkemy.org" englishMode={englishMode}/>
       <Certifications type="OpenBootcamp" link="https://community.open-bootcamp.com/user/ricardo_yegros/certificaciones/7eadcc58-88db-4ced-a453-8c0b0563e526" title="<React Avanzado />" img={ReactAvanzadoImg} academyLink="https://open-bootcamp.com" englishMode={englishMode}/>
