@@ -8,7 +8,7 @@ export default function AnimatedHours({darkMode, englishMode, english, spanish})
                 !darkMode ? "text-primary" : "text-primaryDark"
               } `}
             >
-              +<AnimatedNumbers value={1920} />
+              +<AnimatedNumbers value={3000} />
             </span>
             <h2
               className={`text-xl font-medium font-montserrat capitalize xl:text-center md:text-lg sm:text-base xs:text-sm ${
