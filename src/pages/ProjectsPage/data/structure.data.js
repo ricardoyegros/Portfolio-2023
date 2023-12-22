@@ -20,7 +20,7 @@ export const projects = (englishMode) => [{
   },{
     type: "Front End Developer",
     link: "https://www.ziriodao.com/",
-    title: englishMode ? "Zirio DAO (Current)":"Zirio DAO (Actualidad)",
+    title: englishMode ? "Zirio DAO" : "Zirio DAO",
     img: Zirio,
     github: "https://github.com/ricardoyegros",
     summary: englishMode ? english.zirioDescription : spanish.zirioDescription,
